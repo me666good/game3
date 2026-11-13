@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Merge - 聖誕合盒樂</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+</head>
+<body>
+    <div class="snow-bg"></div>
+
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🎄 聖誕hoho樂 🎅</h1>
+            <p>點擊落下小物，小心不要超過紅線！</p>
+        </div>
+        
+        <div id="gift-box" class="gift-box">
+            <div id="game-over" class="game-over">
+                <div class="game-over-content">
+                    <h2>箱子滿了！</h2>
+                    <p>再挑戰一次吧！</p>
+                    <button onclick="location.reload()">重新開始</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="evolution-container">
+            <p>✨ 大小順序列 ✨</p>
+            <div id="evolution-bar" class="evolution-bar"></div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
